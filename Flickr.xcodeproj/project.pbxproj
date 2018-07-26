@@ -13,6 +13,7 @@
 		8C99CAF1210A19ED00E45141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CAEF210A19ED00E45141 /* LaunchScreen.storyboard */; };
 		8C99CAFC210A19ED00E45141 /* FlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99CAFB210A19ED00E45141 /* FlickrTests.swift */; };
 		8C99CB07210A19ED00E45141 /* FlickrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99CB06210A19ED00E45141 /* FlickrUITests.swift */; };
+		8C99CB15210A273900E45141 /* FlickrPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99CB14210A273900E45141 /* FlickrPhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		8C99CB02210A19ED00E45141 /* FlickrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C99CB06210A19ED00E45141 /* FlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrUITests.swift; sourceTree = "<group>"; };
 		8C99CB08210A19ED00E45141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C99CB14210A273900E45141 /* FlickrPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				8C99CAED210A19ED00E45141 /* Assets.xcassets */,
 				8C99CAEF210A19ED00E45141 /* LaunchScreen.storyboard */,
 				8C99CAF2210A19ED00E45141 /* Info.plist */,
+				8C99CB14210A273900E45141 /* FlickrPhotosViewController.swift */,
 			);
 			path = Flickr;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C99CB15210A273900E45141 /* FlickrPhotosViewController.swift in Sources */,
 				8C99CAE7210A19ED00E45141 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

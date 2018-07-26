@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-522" y="48"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Flicker Photos View Controller-->
         <scene sceneID="LLu-bn-QDn">
             <objects>
-                <collectionViewController id="aHK-9d-WXB" sceneMemberID="viewController">
+                <collectionViewController id="aHK-9d-WXB" customClass="FlickerPhotosViewController" customModule="Flickr" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2XW-wH-Vhl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aCx-Hs-M7o">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickerCell" id="aCx-Hs-M7o">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -54,11 +54,23 @@
                             <outlet property="delegate" destination="aHK-9d-WXB" id="g3v-b0-vkm"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="gmQ-3W-bYN"/>
+                    <navigationItem key="navigationItem" id="gmQ-3W-bYN">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Search" textAlignment="natural" minimumFontSize="17" id="b8N-fV-kal">
+                            <rect key="frame" x="128.5" y="7" width="118" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="aHK-9d-WXB" id="7x4-rI-sc5"/>
+                            </connections>
+                        </textField>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yy-A1-djO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="47"/>
+            <point key="canvasLocation" x="392.80000000000001" y="46.326836581709152"/>
         </scene>
     </scenes>
 </document>
